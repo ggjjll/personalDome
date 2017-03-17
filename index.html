@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>俄罗斯方块 - 来，一起搬砖</title>
+    <link href="css/indexStyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mainBox">
+        <canvas id="mainCanvas"></canvas>
+        <div id="startBox">
+            <img src="img/logo.png">
+            <div id="startBtn">开始游戏</div>
+        </div>
+        <div class="infoBox top left">
+            <div class="title">下一个</div>
+            <canvas id="nextCanvas"></canvas>
+        </div>
+        <div class="infoBox top right">
+            <div class="title">等级</div>
+            <canvas id="levelCanvas"></canvas>
+        </div>
+        <div class="infoBox bottom left scoreBox">
+            <div class="title">数据</div>
+            <div class="list">成绩：<span id="score">0</span></div>
+            <div class="list">消灭：<span id="row">0</span>行</div>
+        </div>
+        <div class="infoBox bottom right buttonBox">
+            <div class="title">功能</div>
+            <div class="list btn" id="reGame">重新开始(R)</div>
+            <div class="list btn" id="playGame">暂停游戏(P)</div>
+        </div>
+    </div>
+</body>
+<script src="js/data.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/gameMind.js"></script>
+</html>
